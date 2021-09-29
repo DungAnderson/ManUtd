@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+html{
+    font-family: 'Roboto Slab', serif;
+    /* background-color: aliceblue; */
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background-color:  rgb(153, 0, 0);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+}
+.header p{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin: auto;
+}
+.header img{
+    width: 60px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.khoitren{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(230, 0, 25);
+    position: relative;
+    display: inline-block;
+    margin-top: 90px;
+}
+.khoitren .logo img{ 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.title{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    left: 22%;
+    top: 0;
+    color: white;
+    font-size: 15px;
+}
+.h1{
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 90px;
+
+}
+.svd{
+    font-size: 19px;
+    margin-top: 20px;
+}
+.web{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 7px;
+    color: white;
+}
+.web:hover{
+    color: springgreen;
+}
+.title .mxh{
+    position: absolute;
+    top: 0;
+}
+.mxh .share{
+    position: absolute;
+    top: 230px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.mxh .lg{
+    margin-top: 260px;
+    width: 40px;
+    margin-left: 30px;
+    border-radius: 50%;
+    background-color: springgreen;
+}
+.khoitren .image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+}
+.image img{
+    height: 400px;
+    width: 100%;;
+}
+.player{
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 4.5%;
+    height: 1500px;
+    overflow: hidden;
+}
+.player h1{
+    font-size: 45px;
+    text-align: center;
+}
+.ten{
+    font-weight: bold;
+}
+.thumon{
+    width: 320px;
+    height: 280px;
+    border: black solid 1px;
+    display: flex;
+    margin: auto;
+    position: relative;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 3%;
+    overflow: hidden;
+}
+.thumon .tren{
+    background-image: url(./images/nen2.jpg);
+ 
+    height: 140px;
+    width: 440px;
+    overflow: hidden;
+}
+.thumon .anh{
+    text-align: right;
+}
+.thumon .thongtin{
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+.thumon .duoi .trai{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    color: dimgrey;
+}
+.thumon .duoi .phai{
+    position: absolute;
+    text-align: right;
+    right: 10px;
+    bottom: 10px;
+    font-weight: bold;
+}
+.thumon .nenanh{
+    top: -1;
+    left: -1;
+    position: absolute;
+    background-color: aliceblue;
+    width: 320px;
+    height: 280px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.thumon .nenanh:hover{
+    opacity: 1;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+.hauve{
+    display: flex;
+    margin-left: 10px;
+}
+.tienve{
+    display: flex;
+}
+.tiendao{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+#manager {
+    color: white;
+    padding-bottom: 1em;
+}
+
+.manager-visual {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    background-color: #3F3F3F;
+    padding-top: 3em;
+}
+
+.visual-message {
+    width: 70%;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.role {
+    padding-bottom: 1em;
+    font-size: 1.9em;
+    position: relative;
+    top: -1.5em;
+}
+
+.role::after {
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 150px;
+    background-color: red;
+}
+
+.role-name {
+    font-size: 1.6em;
+    width: 70%;
+}
+
+.visual-image img {
+    width: inherit;
+    align-self: flex-end;
+}
+
+.manager-visual-items {
+    flex-basis: 20%;
+  
+}
+
+.visual-image {
+    display: flex;
+    align-self: flex-end;
+}
+
+.visual-text {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+
+.visual-name {
+    text-transform: uppercase;
+}
+
+.visual-statics {
+    display: flex;
+    flex-direction: column;
+}
+
+.visual-statics .number {
+    display: block;
+    font-size: 20px;
+}
+
+.match,
+.wins,
+.trophies {
+    padding-top: 1em;
+    margin-bottom: 2em;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.manager-info {
+    width: 60%;
+    margin: 3em auto;
+    color: black;
+    font-size: 20px;
+}
+
+.info-bio {
+    border-bottom: grey solid 1px;
+}
+
+.info-bio .bio-title {
+    text-transform: uppercase;
+    color: grey;
+}
+
+.bio-text {
+    text-transform: none;
+}
+
+.info-shortcut {
+    display: flex;
+    text-transform: capitalize;
+}
+
+.shortcut-items {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-items {
+    flex: 1;
+}
+
+.items-title {
+    color: grey;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.items-date {
+    font-size: 1.5em;
+    color: red;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.norway {
+    position: relative;
+    top: 0.5em;
+    padding-right: 0.5em;
+}
+
+
+.stats{
+        margin-top: 50px;
+        width: 1000%;
+        height: 400px;
+        overflow: hidden;
+        background-color: rgb(65, 64, 64);
+        display: flex;
+}
+
+
+
+
+.stats{
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 0%;
+    height: 500px;
+    overflow: hidden;
+    color: black;
+}
+.stats .tieude{
+    position: absolute;
+    margin-left: 35px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.stat{
+    width: 320px;
+    height: 350px;
+    border: black solid 1px;
+    display: flex;
+    margin: auto;
+    position: relative;
+    margin-top: 100px;
+    background-color: white;
+    border-radius: 3%;
+    overflow: hidden;
+}
+.stat .vitri{
+    position: absolute;
+    top: 0;
+    color: blue;
+    font-weight: bold;
+    left: 10px;
+    top: -10px;
+}
+.stat .tren{
+    margin-top: 36px;
+    background-image: url(./images/nen2.jpg);
+ 
+    height: 140px;
+    width: 440px;
+    overflow: hidden;
+}
+.stat .anh{
+    text-align: right;
+}
+.stat .thongtin{
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+.stat .duoi .trai{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: black;
+}
+.stat .duoi .phai{
+    position: absolute;
+    text-align: right;
+    right: 10px;
+    bottom: 10px;
+    font-weight: bold;
+}
+.stat .nenanh{
+    top: -1;
+    left: -1;
+    position: absolute;
+    background-color: aliceblue;
+    width: 320px;
+    height: 350px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.stat .nenanh img{
+    width: 320px;
+    height: 350px;
+}
+.stat .nenanh:hover{
+    opacity: 1;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+.thongtin .so{
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    font-weight: bolder;
+    color: red;
+}
+.nhataitro img{ 
+    width: 100%;
+}
